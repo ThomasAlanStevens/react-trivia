@@ -1,6 +1,10 @@
+import StartScreen from "./components/StartScreen";
+
 function App() {
   return (
-    <h1>h1</h1>
+    <div className="app">
+      <StartScreen/>
+    </div>
   );
 }
 
