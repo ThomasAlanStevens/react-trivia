@@ -21,7 +21,9 @@ export default function StartScreen(){
                 <li><button onClick={changeDifficulty}>Medium</button></li>
                 <li><button onClick={changeDifficulty}>Hard</button></li>
             </ul>
-            <Link to='./easy'><button><span>Start Quiz</span><span className="difficulty">{difficulty}</span></button></Link>
+            <Link to={`../${difficulty.toLowerCase()}`}><button><span>Start Quiz</span><span className="difficulty">{difficulty}</span></button></Link>
         </section>
     )
+
+    
 }

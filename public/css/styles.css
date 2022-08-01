@@ -61,14 +61,17 @@ body{
 /* App Styles */
 .app{
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   position: relative;
   vertical-align: middle;
   width: 80%;
   max-width: 1200px;
-  height: 100vh;
-  margin: auto;
+  height: 90vh;
+  margin: 5% auto;
   text-align: center;
+  gap: 1em;
 }
 
 /* Start Screen Styles */
@@ -140,12 +143,68 @@ body{
   margin: .1em;
 }
 
-.startScreen > button span.difficulty{
+.startScreen button span.difficulty{
   font-size: 1.5rem;
   color: rgb(193, 193, 193);
 }
 
 
-/* Link Styles */
+/* Quiz Page Styles */
 
+.questions{
+  display: flex;
+  gap: 1em;
+  justify-content: start;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  flex: auto;
+  width: 100%;
+  border-bottom: 1px solid gray;
+}
+
+.questions h3{  
+  font-size: 1.5rem;
+  text-align: start;
+}
+
+.questions button{  
+  font-size: 1.25rem;
+  border-radius: 10px;
+  padding: .3em .6em;
+  transition-duration: .25s;
+}
+
+.questions button:hover{  
+  transform: scale(1.1);
+}
+
+
+div.answers{
+  display: flex;
+  justify-content: flex-start;
+  gap: 1em;
+}
+
+.quizTitle{
+  border-bottom: .1em solid black;
+  margin-bottom: 1em;
+  font-size: 2.5rem;
+  color: #293264;
+}
+
+.playAgain{
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: .5em 1.25em;
+  border-radius: 10px;
+  color: white;
+  background: #4D5B9E;
+  transition-duration: .25s;
+}
+
+.playAgain:hover{
+  transform: scale(1.1);
+  color: gray;
+}
 
